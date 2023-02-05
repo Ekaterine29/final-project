@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Us</title>
+    <link rel="stylesheet" href="style.css">
+     <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+
+   <div class="reg-title">
+    <a href="index.html"><i class="fa-solid fa-chevron-left"></i></a>
+    <h2 class="reg-h2">Registration</h2>
+    
+   </div>
+     <!-- registration form -->
+     <section class="form-section">
+        <form action="" id="form-registration" class="form">
+          <div class="form-wraper">
+            <label for="name">Name</label>
+            <span class="error-text" id="error_name"></span>
+            <input type="text" id="name" name="name" class="inp" />
+          </div>
+          <div class="form-wraper">
+            <label for="surname">Surname</label>
+            <span class="error-text" id="error_surname"></span>
+            <input type="text" id="surname" name="surname" class="inp" />
+          </div>
+          <div class="form-wraper">
+            <label for="passw1">Password</label>
+            <span class="error-text" id="error_mypassword"></span>
+            
+            <input class="text-input password-input" type="password" id="passw1" name="mypassword" autocomplete="off" placeholder=" Password" />
+          </div>
+          <div class="form-wraper">
+            <label for="passw2">Repeat Password</label>
+            <span class="error-text" id="error_mypassword2"></span>
+            
+            <input class="text-input password-input" type="password" id="passw2" name="mypassword2" autocomplete="off" placeholder=" Repeat Password"/>
+          </div>
+          <div class='form-wraper' id="emailfield">
+            <label for="myemail">Email</label>
+            <span class="error-text" id="error_email"></span>
+            <input type="email" class="email" id="email" name="email"  placeholder="&#xf0e0;  insert email"  />         
+          </div>
+          <div class="form-wraper">
+            <span class="error-text" id="error_age"></span>
+            <label for="myage">Age</label>
+            <input type="radio" name="age" id="age1" class="age" />
+            <label for="age1">18-25</label>
+            <input type="radio" id="age2" name="age" class="age" />
+            <label for="age2">25-50</label>
+            <input type="radio" id="age3" name="age" class="age" />
+            <label for="age3">>50</label>
+            </div>
+          
+          </div>
+          <div class="check-box">
+            <input type="checkbox" name="agree" id="agree" class="inp" />
+            <label for="agree">Agree to Terms and Conditions</label>
+            <span class="error-text" id="error_agree"></span>
+          </div>
+          <button type="submit" class="submit">Join Now</button>
+        </form>
+      </section>
+      <!-- cookies -->
+      <div class="wrapper">
+        <div>
+          <i class="bx bx-cookie"></i>
+          <h2>Cookies Consent</h2>
+        </div>
+  
+        <div class="data">
+          <p>This website use cookies to help you have a superior and more relevant browsing experience on the website. <a href="#"> Read more...</a></p>
+        </div>
+  
+        <div class="buttons">
+          <button class="button" id="acceptBtn">Accept</button>
+          <button class="button" id="declineBtn">Decline</button>
+        </div>
+      </div>
+    <script src="cookies.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
