@@ -7,13 +7,13 @@ let emailPattern =
     /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
 
-formRegistration.addEventListener("submit", function (event) {
+ formRegistration.addEventListener('.submit', function (event) {
   event.preventDefault();
 
   let errors = {};
   let form = event.target;
 
-  let name= document.getElementById("name").value;
+  let name= document.getElementById(".name").value;
 
   if (name == "") {
     errors.name = "Please enter your name";
@@ -131,8 +131,8 @@ toggleIcons.forEach(function (toggleIcon, i) {
   });
 });
 
-// cookie
-const cookieBox = document.querySelector(".wrapper"),
+cookie
+const cookieBox = document.querySelector(".cookies"),
   buttons = document.querySelectorAll(".button");
 
 const executeCodes = () => {
@@ -144,11 +144,27 @@ const executeCodes = () => {
       cookieBox.classList.remove("show");
 
       if (button.id == "acceptBtn") {
-        document.cookie = "cookieBy= codinglab; max-age=" + 60 * 60 * 24 * 30;
+        document.cookie = "cookieBy= mycookie; max-age=" + 60 * 60 * 24 * 2;
       }
     });
   });
 };
-
 window.addEventListener("load", executeCodes);
+
+// window.addEventListener("load", executeCodes);
+
+// const cookieBox = document.querySelector(".cookies"),
+// acceptBtn = cookieBox.querySelector(".buttons");
+
+// acceptBtn.onclick = ()=>{
+//   document.cookie = "CookieBy=mycookie; max-age="+60*60*24*2;
+//   if(document.cookie){ 
+//     cookieBox.classList.add("hide");
+//   }else{ 
+//     alert("Cookie can't be set! Please unblock this site from the cookie setting of your browser.");
+//   }
+// }
+// let checkCookie = document.cookie.indexOf("CookieBy=mycookie"); 
+
+// checkCookie != -1 ? cookieBox.classList.add("hide") : cookieBox.classList.remove("hide");
 

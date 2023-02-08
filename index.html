@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Complete responsive forniture shop website design</title>
+    <title>Forniture shop</title>
 
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style/splide-core.min.css">
+    <link rel="stylesheet" href="style/splide.min.css">
     
-    
-   
-   <link rel="shortcut icon" href='image/download.png' type="image/x-icon">
 </head>
 <body>
     <!-- scroll top -->
@@ -31,7 +30,7 @@
             <li><a href='#products'>Products</a></li>
         </ul>
         <a href="#" class="logo">
-            <img src="/image/download.png">
+            <img src="/image/logo.png">
 
 
         </a>
@@ -43,7 +42,7 @@
             <div class="cart-container">
                 <!-- box 1 -->
                 <div class="cart-box">
-                    <!-- <img src="image/544-5440866_butterfly-chair-egg-chair-couch-sofa-gio-ponti.png" alt=""> -->
+                    <img src="/image/product4.png" alt="">
                       <div class="cart-text">
                         <h3>Soft Forniture</h3>
                         <span>$150</span>
@@ -76,10 +75,10 @@
       
 </header>
 <!-- home section -->
-<section class="home container" id="home">
+<section class="home-container" id="home">
     <div class="home-text">
         <h1><span>Make Your Happy Place</span> <br> With Modern Forniture </h1>
-        <p> aq iqneba text</p>
+        
         <a href="#" class="btn">Shop More</a>
 
     </div>
@@ -87,6 +86,20 @@
         <img src="/image/purple+office+chair.png" alt="">
 
     </div>
+
+    </section>
+    <!-- splider -->
+    <section class="splide" aria-label="Splide Basic HTML Example">
+        <div class="splide__track">
+              <ul class="splide__list">
+                  <li class="splide__slide"><img src="/image/splider1 (1).png" alt=""></li>
+                  <li class="splide__slide"><img src="/image/plider1 (2).png" alt=""></li>
+                  <li class="splide__slide"><img src="/image/plider1 (3).png" alt=""></li>
+                  <li class="splide__slide"><img src="/image/plider1 (4).png" alt=""></li>
+                  <li class="splide__slide"><img src="/image/plider1 (5).png" alt=""></li>
+              </ul>
+        </div>
+      </section> 
     <!-- popular section -->
     <section class="popular container" id="popular">
         <div class="heading">
@@ -153,7 +166,7 @@
         </div>
         <div class="about-text">
         <h2>About Us</h2>
-        <p>aq iqneba text</p>
+        
          <div  class="features">
             <i class='bx bxs-checkbox-checked'><span>Free Home Delivery</span></i>
             <i class='bx bxs-checkbox-checked'><span>Easy Returns</span></i>
@@ -272,8 +285,8 @@
 </section>
 <!-- footer section -->
 
-<section class="footer-container">
-    
+<section >
+    <div class="footer-container">
     <div class="footer-box">
         <h3>The Company</h3>
         <a href="#">About Us</a>
@@ -300,13 +313,25 @@
         <a href='#'><i class='bx bxl-facebook-circle'></i></a>
         <a href="#"><i class='bx bxl-instagram' ></i></a>
         <a href="#"><i class='bx bxl-twitter' ></i></a>
-        
-     
+    </div>
     </div>
      </section>
+     <!-- cookies -->
+     <div class="cookies">
+        <img src="/image/cookie.png" alt="">
+        <div class="content">
+          
+          <p>This website use cookies to help you have a superior and more relevant browsing experience on the website.</p>
+          <div class="buttons">
+            <button class="button" id="acceptBtn">Accept</button>
+            <button class="button" id="declineBtn">Decline</button>
+          </div>
+          </div>
+      </div>
 
     <script src="script.js"></script>
     <script src="/cookies.js"></script>
+    <script src="/splide.min.js"></script>
     
     
 
