@@ -5,9 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Join Us</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/style.css">
      <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+     <link rel="stylesheet" href="splide-core.min.css">
+     <link rel="stylesheet" href="splide.min.css">
 </head>
 <body>
 
@@ -17,58 +19,72 @@
     
    </div>
      <!-- registration form -->
-     <section class="form-section">
-        <form action="" id="form-registration" class="form">
+     <section>
+      <form action="" id="form-registration">
           <div class="form-wraper">
-            <label for="name">Name</label>
-            <span class="error-text" id="error_name"></span>
-            <input type="text" id="name" name="name" class="inp" />
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name='username'>
+              <span class="error-text" id="error-username"></span>
           </div>
           <div class="form-wraper">
-            <label for="surname">Surname</label>
-            <span class="error-text" id="error_surname"></span>
-            <input type="text" id="surname" name="surname" class="inp" />
+              <label for="surname">Surname</label>
+              <input type="text" id="surname" name='mysurname'>
+              <span class="error-text" id="error-mysurname"></span>
           </div>
           <div class="form-wraper">
-            <label for="passw1">Password</label>
-            <span class="error-text" id="error_mypassword"></span>
-            
-            <input class="text-input password-input" type="password" id="passw1" name="mypassword" autocomplete="off" placeholder=" Password" />
+              <label for="passw1">Password</label>
+              <input type="newpassword" id="passw1" name='mypassword'>
+              <span class="error-text" id="error-mypassword"></span>
           </div>
           <div class="form-wraper">
-            <label for="passw2">Repeat Password</label>
-            <span class="error-text" id="error_mypassword2"></span>
-            
-            <input class="text-input password-input" type="password" id="passw2" name="mypassword2" autocomplete="off" placeholder=" Repeat Password"/>
-          </div>
-          <div class='form-wraper' id="emailfield">
-            <label for="myemail">Email</label>
-            <span class="error-text" id="error_email"></span>
-            <input type="email" class="email" id="email" name="email"  placeholder="&#xf0e0;  insert email"  />         
-          </div>
-          <div class="form-wraper">
-            <span class="error-text" id="error_age"></span>
-            <label for="myage">Age</label>
-            <input type="radio" name="age" id="age1" class="age" />
-            <label for="age1">18-25</label>
-            <input type="radio" id="age2" name="age" class="age" />
-            <label for="age2">25-50</label>
-            <input type="radio" id="age3" name="age" class="age" />
-            <label for="age3">>50</label>
-            </div>
+              <label for="passw2">Repeat Password</label>
+              <input type="newpassword" id="passw2" name='mypassword2'>
+              <span class="error-text" id="error-mypassword2"></span>
+          
           
           </div>
-          <div class="check-box">
-            <input type="checkbox" name="agree" id="agree" class="inp" />
-            <label for="agree">Agree to Terms and Conditions</label>
-            <span class="error-text" id="error_agree"></span>
-          </div>
-          <button type="submit" class="submit">Join Now</button>
-        </form>
-      </section>
-      
+          <div>
+              <input type='radio'  name='age' id="age1" class="age">
+              <label for="age1">18-30</label>
+              <input type="radio" id="age2" name="age" class="age">
+              <label for="age2">30-45</label>
+             
 
-    <script src="cookies.js"></script>
-    <script src="script.js"></script>
+          </div>
+          <div>
+              <input type="email" id="myemail" name="email" placeholder="Email"/>
+              <span class="emailError" id="emailError"></span>
+          </div>
+          <div>
+              <input type="checkbox" name="agree" id="agree">
+              <label for="agree" >I agree terms and conditions</label>
+              <span class="error-text" id="error-agree"></span>
+              
+          </div>
+          <button type="submit">Join Now</button>
+
+          <section class="splide" aria-label="Splide Basic HTML Example">
+            <div class="splide__track">
+                  <ul class="splide__list">
+                      <li class="splide__slide"><img src="./image/slider1.jpg" alt=""></li>
+                      <li class="splide__slide"><img src="./image/slider2.jpg" alt=""></li>
+                      <li class="splide__slide"><img src="./image/slider3.jpg" alt=""></li>
+                      <li class="splide__slide"><img src="./image/splider4.png" alt=""></li>
+                      <li class="splide__slide"><img src="./image/splider5.png" alt=""></li>
+                  </ul>
+            </div>
+          </section> 
+
+      </form>
+  </section>
+ 
+
+    <script src="/js/registration.js"></script>
+    <script src="/js/script.js"></script>
+    <script src="/js/splide.min.js"></script>
+    <script src='/js/splider.js'></script>
+    
+
+    
 </body>
 </html>
