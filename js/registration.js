@@ -75,6 +75,7 @@ if(Object.keys(errors).length==0){
    alert('form submit');
    form.submit();
 }
+ });
 
 
 
@@ -117,7 +118,5 @@ emailField.addEventListener('keyup',function(){
    if (emailValue==''){
       spanErrorText.innerText='';
    }
-});
-
-
-
+})
+ 
